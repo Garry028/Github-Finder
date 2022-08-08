@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = (props) =>{
    
         return (
-            <nav className="navbar bg-dark">
+            <nav className="navbar bg-primary">
                 <h1>
                     <i className="fab fa-github px-1" />{props.title}
                 </h1>
