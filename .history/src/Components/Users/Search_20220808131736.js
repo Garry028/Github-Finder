@@ -24,20 +24,19 @@ class Search extends Component {
     }
 
     render() {
-     
-        const {showClear,clearUsers}=this.props;
 
+        
         return (
             <div>
                 <form onSubmit={this.onSubmit} className="form">
                     <input type="text" name='text' placeholder='Search User...' value={this.state.text} onChange={this.onChange} />
-                    <input type="submit" value="Search" className='btn btn-success btn-block' />
+                    <input type="submit" value="Search" className='btn btn-dark btn-block' />
                 </form>
 
                 {/* means when showClear is true then & only then show clear button */}
 
                 {
-                    showClear && (<button className="btn btn-light btn-block" onClick={clearUsers}>
+                    this.props.showClear && (<button className="btn btn-light btn-block" onClick={this.props.clearUsers}>
                         Clear
                     </button>)
                 }

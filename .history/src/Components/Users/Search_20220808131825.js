@@ -31,7 +31,7 @@ class Search extends Component {
             <div>
                 <form onSubmit={this.onSubmit} className="form">
                     <input type="text" name='text' placeholder='Search User...' value={this.state.text} onChange={this.onChange} />
-                    <input type="submit" value="Search" className='btn btn-success btn-block' />
+                    <input type="submit" value="Search" className='btn btn-dark btn-block' />
                 </form>
 
                 {/* means when showClear is true then & only then show clear button */}
