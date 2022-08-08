@@ -14,6 +14,7 @@ class App extends Component {
 
   async componentDidMount() {
 
+    console.log(REACT_APP_GITHUB_CLIENT_SECRET)
 
     this.setState({ loading: true });
 
