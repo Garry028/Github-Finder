@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const Users = ({ users, loading }) => {
 
     if (loading) {
-        return <Spinner/>
+        return <Spinner />
     }
     else {
         return (
@@ -19,9 +19,9 @@ const Users = ({ users, loading }) => {
     }
 }
 
-Users.propTypes={
-    users:PropTypes.array.isRequired,
-    loading:PropTypes.bool.isRequired
+Users.propTypes = {
+    users: PropTypes.array.isRequired,
+    loading: PropTypes.bool.isRequired
 }
 // this is type checking
 

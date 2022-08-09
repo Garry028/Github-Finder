@@ -1,8 +1,9 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const UserItem = (props) => {
     
-    const { login, avatar_url, html_url } = props.user;
+    const { login, avatar_url } = props.user;
     // these culry braces pull the objects from state so we we don't have to write the this.state everytime
 
     return (
@@ -11,7 +12,7 @@ const UserItem = (props) => {
             <h3>{login}</h3>
 
             <div>
-                <a href={html_url} className="btn btn-dark btn-sm my-1">More</a>
+                <Link to={`/user/${login}`} className="btn btn-dark btn-sm my-1">More</Link>
             </div>
         </div>
     )
