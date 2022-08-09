@@ -8,7 +8,7 @@ import Search from './Components/Users/Search';
 import Alert from './Components/layout/Alert';
 import About from './Components/Pages/About';
 import User from './Components/Users/User';
-
+import GithubState from './Context/github/GithubState';
 
 const App = () => {
 
@@ -41,6 +41,7 @@ const App = () => {
   }
 
   return (
+    <GithubState>
     <Router>
       <div className='App'>
         <Navbar title={"Github Finder"} />
@@ -75,6 +76,7 @@ const App = () => {
         </div>
       </div>
     </Router>
+    </GithubState>
   )
 
 }
