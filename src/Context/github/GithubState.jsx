@@ -36,9 +36,10 @@ const GithubState = props => {
     return <GithubContext.Provider
         // we're making this props available globally thoughout the project
         value={{
-            users: state.users,
-            user: state.user,
-            loading: state.loading
+            users:initialState.users,
+            user:initialState.user,
+            loading:initialState.loading
+
         }}
 
     >
